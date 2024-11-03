@@ -27,17 +27,22 @@
 * Запустите приложение и используйте поисковую строку для поиска треков.
 * Выберите жанр для фильтрации треков.
 * Используйте плейбар для управления воспроизведением треков и открытия плейлиста.
+
+## Требования
+- [Node.js](https://nodejs.org/) (рекомендуемая версия: 18.x или выше)
+- [npm](https://www.npmjs.com/) (обычно устанавливается вместе с Node.js)
+- [Git](https://git-scm.com/) (для клонирования репозитория)
       
 ## Установка
 Выполните следующие действия, чтобы установить и запустить проект:
 
 1. **Клонируйте репозиторий**:
   ```bash
-  git clone https://github.com/bidzyu/mysnake.git
+  git clone https://github.com/bidzyu/music_app.git
   ```
 
 2. **Перейдите в каталог проекта**:
-  `cd mysnake`
+  `cd music_app`
 
 3. **Установите зависимости**:
   `npm install`
@@ -48,13 +53,18 @@
 ## Используемые технологии
 **Основные**:
 - [React](https://react.dev) - библиотека для создания пользовательских интерфейсов
-- [TypeScript](https://www.typescriptlang.org/docs/) - язык программирования, основанный на JavaScript
-- [Redux toolkit](https://redux-toolkit.js.org/) - библиотека для управления состоянием в приложениях на основе Redux
+- [React Context](https://react.dev/reference/react/createContext) - способ передачи данных через дерево компонентов без необходимости передавать пропсы на каждом уровне.
 - [Vite](https://vite.dev/guide/) - современный сборщик проектов
 - [npm](https://www.npmjs.com) - менеджер пакетов
 
 **Стили**:
 - [Sass](https://sass-lang.com) - CSS препроцессор.
+- [css-modules](https://github.com/css-modules/css-modules) - Подход к стилизации, который позволяет использовать классы CSS в локальном контексте, избегая конфликтов имен.
+
+**Вспомогательные**:
+- [classnames](https://github.com/JedWatson/classnames) - Утилита для условного объединения классов CSS.
+- [Material-UI](https://mui.com) - Библиотека компонентов пользовательского интерфейса
+- [Emotion](https://emotion.sh/docs/introduction) - Библиотека для стилизации компонентов
 
 ## Скрипты
 -  `npm run dev` — Запускает проект в режиме разработки с помощью Vite.
